@@ -69,6 +69,9 @@
         speed.textContent = data.coords.speed;
         // measures direction and moves compass
         arrow.style.transform = `rotate(${data.coords.heading}deg)`;
+    }, (err) => {
+        console.err(err);
+        alert("ALERT MESSAGE TO USER IF NOT WORKING!");
     });
 
   </script>
