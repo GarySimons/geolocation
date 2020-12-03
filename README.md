@@ -1,3 +1,3 @@
 # Geolocation based Speedometer and Compass
 
-xxxxxxx
+Website to show the location and speed of a person

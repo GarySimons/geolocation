@@ -59,6 +59,14 @@
     /*Compass: https://thenounproject.com/search/?q=compass&i=592352*/
   </style>
   <script>
+    const arrow = document.querySelector('.arrow');
+    const speed = document.querySelector('.speed-value');
+
+    // can use 'getPosition' or 'watchPosition'. Use watch as update data as it goes
+    naigaotor.geolocation.watchPosition((data) => {
+        console.log(data);
+    });
+
   </script>
 </body>
 </html>
