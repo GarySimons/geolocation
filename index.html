@@ -65,6 +65,10 @@
     // can use 'getPosition' or 'watchPosition'. Use watch as update data as it goes
     naigaotor.geolocation.watchPosition((data) => {
         console.log(data);
+        // measures speed and show on screen
+        speed.textContent = data.coords.speed;
+        // measures direction and moves compass
+        arrow.style.transform = `rotate(${data.coords.heading}deg)`;
     });
 
   </script>
